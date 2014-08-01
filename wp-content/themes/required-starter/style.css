@@ -1,0 +1,90 @@
+/*
+Theme Name: JamesCorne.com
+Theme URI: http://themes.required.ch/
+Author: required+ Team
+Author URI: http://required.ch/
+Description: Starter child theme for the required+ Foundation parent theme.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0.4
+Template: required-foundation
+Text Domain: requiredstarter
+*/
+
+/*
+	Make the template work
+*/
+@import url(../required-foundation/style.css);
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; font-weight: 300; }
+
+#site-title { font-weight: 600; }
+
+.required-header .inline-list {
+	margin-top: 14px;
+}
+
+#tooltip-element {
+    position:absolute;
+    padding:3px;
+    border-top:none;
+    border-left:1px solid #ededed;
+    border-right:1px solid #ededed;
+    border-bottom:1px solid #cdcdcd;
+    z-index:9999;
+    color:#fff;
+    font-size:10px;
+    width:180px; 
+    background:rgba(0,0,0, 0.75);
+    border-radius:6px;
+}
+
+.zoomTarget,
+.zoomTarget:hover {
+    cursor: crosshair !important;
+}
+
+.zoomTarget.zoomNotClickabl:hover {
+    cursor: auto !important;
+}
+
+#zoom-wrap {
+    background:#000;
+    overflow:hidden;
+    z-index:20;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.cork-section {
+    position:absolute;
+    width:45%;
+    height:45%;
+    /*background-color:rgba(255,255,255,0.25);*/
+}
+
+.cork-section:nth-child(2),
+.cork-section:nth-child(4) {
+	left:50%;
+}
+
+.cork-section:nth-child(3),
+.cork-section:nth-child(4) {
+	top:50%;
+}
+
+.cork-section:nth-child(2) {
+    transform:rotate(-7deg);
+    -ms-transform:rotate(-7deg); /* IE 9 */
+    -webkit-transform:rotate(-7deg); /* Safari and Chrome */
+}
+
+.cork-section:nth-child(2) {
+    width: 26%;
+    /*background: #fff;*/
+    top: 15%;
+    left: 60%;
+}
